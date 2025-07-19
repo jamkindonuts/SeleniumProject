@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+
+  <suite name="StudyMate Regression Suite">
+    <test name="StudyMate Test Cases">
+        <parameter name="expectedCourseCreateText" value="Create course"> </parameter>
+        <parameter name="courseNameInput" value="Automation"> </parameter>
+        <parameter name="courseDateInput" value="07.12.2025"> </parameter>
+        <parameter name="descriptionCourseInput" value="Selenium"> </parameter>
+        <parameter name="expectedCourseName" value="Automation"> </parameter>
+        <parameter name="expectedCourseDate" value="07.12.2025"> </parameter>
+        <parameter name="expectedDescriptionCourse" value="Selenium"> </parameter>
+
+        <classes>
+            <class name="ui.qa.studyMate.tests.TestBase"> </class>
+            <class name="ui.qa.studyMate.tests.LoginPageTest"> </class>
+            <class name="ui.qa.studyMate.tests.GroupsPageTest"> </class>
+            <class name="ui.qa.studyMate.tests.CoursesPageTest"> </class>
+            <class name="ui.qa.studyMate.tests.TeachersPageTest"> </class>
+            <class name="ui.qa.studyMate.tests.StudentsPageTest"> </class>
+
+        </classes>
+    </test>
+  </suite>

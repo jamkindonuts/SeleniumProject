@@ -49,9 +49,7 @@ public class CoursesPage {
 
     public  void clickCoursesButton(){
         coursesButton.click();
-
     }
-
     public void uploadPhoto(String photoPath) {
         uploadPhotoBox.sendKeys(photoPath);
     }

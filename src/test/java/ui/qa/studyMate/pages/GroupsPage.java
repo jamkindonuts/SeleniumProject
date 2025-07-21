@@ -20,7 +20,6 @@ public class GroupsPage {
             PageFactory.initElements(driver, this);
 
         }
-
         @FindBy(xpath = "//a[@class='active']")           //choice group on dashboard
         WebElement groupsTab;
 
@@ -119,8 +118,6 @@ public class GroupsPage {
         public boolean isGroupPresent(String groupName) {
             return !driver.findElements(By.xpath("//*[contains(text(),'" + groupName + "')]")).isEmpty();
         }
-
-
         public void waitForGroupToAppear(String groupName) {
             new WebDriverWait(driver, Duration.ofSeconds(5)).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[contains(text(),'" + groupName + "')]")));
         }

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [StudyMate Regression Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="StudyMate Test Cases(failed)">
+    <parameter name="expectedCourseDate" value="07.12.2025"/>
+    <parameter name="descriptionCourseInput" value="Selenium"/>
+    <parameter name="courseNameInput" value="Automation"/>
+    <parameter name="expectedCourseName" value="Automation"/>
+    <parameter name="expectedDescriptionCourse" value="Selenium"/>
+    <parameter name="expectedCourseCreateText" value="Create course"/>
+    <parameter name="courseDateInput" value="07.12.2025"/>
+    <classes>
+      <class name="ui.qa.studyMate.tests.StudentsPageTest">
+        <methods>
+          <include name="validateAddStudentAndCancelFunctionality"/>
+          <include name="validateAddStudentFunctionality"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="validateEditStudentsFunctionality"/>
+        </methods>
+      </class> <!-- ui.qa.studyMate.tests.StudentsPageTest -->
+      <class name="ui.qa.studyMate.tests.TeachersPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="validateTeachersMenuFunctionality" invocation-numbers="0"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- ui.qa.studyMate.tests.TeachersPageTest -->
+    </classes>
+  </test> <!-- StudyMate Test Cases(failed) -->
+</suite> <!-- Failed suite [StudyMate Regression Suite] -->

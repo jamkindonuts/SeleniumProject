@@ -21,8 +21,7 @@ public class StudentsPage {
     public @FindBy(xpath = "//a[@href='/admin/students']")
     WebElement studentsButton;
 
-//    @FindBy(css = "input[name='search']")
-//    WebElement searchBar;
+
 
     @FindBy(xpath = "//button[contains(@class, 'MuiButton-containedSizeMedium css-79mk38')]")
     WebElement addStudentButton;

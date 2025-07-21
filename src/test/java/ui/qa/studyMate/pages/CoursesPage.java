@@ -62,7 +62,7 @@ public class CoursesPage {
         Assert.assertEquals(dateBox.getAttribute("value"), expectedDate);
         Assert.assertEquals(BrowserUtils.getText(descriptionBox), expectedDescription);
         createButton.click();
-        Thread.sleep(2000);
+        Thread.sleep(4000);
     }
 
     public void cancelCourses() {
